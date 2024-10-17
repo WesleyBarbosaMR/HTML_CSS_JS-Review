@@ -1,0 +1,22 @@
+{
+  "name": "html_css_js-review",
+  "version": "1.0.0",
+  "description": "A code to exercise the basic knowledges about Web Development",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesleyBarbosaMR/HTML_CSS_JS-Review.git"
+  },
+  "author": "Wesley Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WesleyBarbosaMR/HTML_CSS_JS-Review/issues"
+  },
+  "homepage": "https://github.com/WesleyBarbosaMR/HTML_CSS_JS-Review#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
