@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review - Web Development</title>
+    <style></style>
+</head>
+
+<body>
+    <header>
+        <h1>Cabeçalho - Título da Página</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Mídia</li>
+                <li>Tabelas</li>
+                <li>Formulários</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Título da Seção - 1 (Parte do Assunto Principal)</h2>
+            <h3>Subtítulo da Seção - 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque, debitis! Hic dolore maiores laboriosam quod
+                soluta officiis! Magni totam numquam modi maxime, nisi
+                possimus, facilis ex, quisquam quae veritatis neque?
+                (Descrição da seção)
+            </p>
+            <form action="forms.html" method="GET">
+                <label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome">
+                <label for="idade">Idade:</label>
+                <input type="number" name="Idade" id="idade" min="1" max="200">
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email">
+                <label for="senha">Senha:</label>
+                <input type="password" name="Senha" id="senha">
+                <input type="checkbox" name="Termos" id="termos">
+                <label for="termos">Aceito os termos de consentimento.</label>
+                <input type="radio" name="Gender" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="Gender" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="Gender" id="outro">
+                <label for="outro">Prefiro não informar</label>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </form>
+            <section id="results">
+                <h2>Resultados do Formulário</h2>
+                <script>
+                    const resultsList = document.getElementById('results')
+                    new URLSearchParams(window.location.search).forEach((value, name) => {
+                        resultsList.append(`${name}: ${value}`)
+                        resultsList.append(document.createElement('br'))
+                    })
+                </script>
+                <a href="forms.html">Voltar</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&#x1f16d; &copy; Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

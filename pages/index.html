@@ -6,74 +6,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review - Web Development</title>
-    <style></style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
         <h1>Cabeçalho - Título da Página</h1>
+        <button id="toggle-css">Desativar CSS</button>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="media.html"> Mídia</a></li>
+                <li><a href="tables.html"> Tabelas</a></li>
+                <li><a href="forms.html"> Formulários</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Título da Seção - 1 (Parte do Assunto Principal)</h2>
-            <h3>Subtítulo da Seção - 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Itaque, debitis! Hic dolore maiores laboriosam quod
-                soluta officiis! Magni totam numquam modi maxime, nisi
-                possimus, facilis ex, quisquam quae veritatis neque?
-                (Descrição da seção)
-            </p>
+            <h1>Experimentos de HTML - 1</h1>
+            <article>
+                <header>
+                    <h2>Título da Seção - 1 (Parte do Assunto Principal)</h2>
+                    <h3>Subtítulo da Seção - 1</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque, debitis! Hic dolore maiores laboriosam quod
+                    soluta officiis! Magni totam numquam modi maxime, nisi
+                    possimus, facilis ex, quisquam quae veritatis neque?
+                    (Descrição da seção)
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Título do Article - 1 (Não precisa relacionar-se com o conteúdo principal)</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque, debitis! Hic dolore maiores laboriosam quod
+                    soluta officiis! Magni totam numquam modi maxime, nisi
+                    possimus, facilis ex, quisquam quae veritatis neque?
+                    (Descrição da seção)
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>
+                        Título do Article - 2 (Com imagem e link) |
+                        <time datetime="2024-10-16">Dia, Mês</time>
+                    </h2>
+                </header>
+                <figure>
+                    <img src="" alt="Imagem">
+                    <figcaption>Imagem 1 (Legenda visível da foto)</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque, debitis! Hic <em>dolore maiores</em> laboriosam quod
+                    soluta officiis! <br /><br /><q>Magni totam numquam modi maxime, nisi
+                        possimus, facilis ex, <strong>quisquam quae</strong>
+                        veritatis neque?</q>
+                    <br /><br /><cite>Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Libero impedit minima autem ex consequuntur
+                        laudantium, expedita eligendi delectus ut! Blanditiis
+                        expedita esse qui tempora laboriosam nihil, fugiat
+                        adipisci quis libero.</cite>
+                </p>
+                <a href="index.html"> Visite o site</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Título do Article - 3 (Com vídeo)</h2>
+                </header>
+                <video src="../assets/videos/The_Ballad_of_the_Witches.mp4" controls></video>
+                <label>Asset Video</label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque, debitis! Hic dolore maiores laboriosam quod
+                    soluta officiis!
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-V1YLGz5NLA?si=WkYYo_jTNI5X1j4C"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <label>Linked Video</label>
+                <audio src="../assets/audio/The_Ballad_of_the_Witches.mp3" controls>Ouça
+                    aqui!</audio>
+                <label>Asset Áudio</label>
+            </article>
+            <article>
+                <h1>Ilustrando a diferença entre Divs e Spans</h1>
+                <div>
+                    <h3>Div Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
+                        quisquam. Deserunt voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus
+                        rem, a aspernatur omnis sunt dignissimos officiis!</p>
+                </div>
+                <div>
+                    <h3>Div Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
+                        quisquam. Deserunt
+                        voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus rem, a aspernatur
+                        omnis sunt
+                        dignissimos officiis!</p>
+                </div>
+                <div>
+                    <h3>Div Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
+                        quisquam. Deserunt
+                        voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus rem, a aspernatur
+                        omnis sunt
+                        dignissimos officiis!</p>
+                </div>
+                <span>
+                    <h4>Span Title - 1</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </span>
+                <span>
+                    <h4>Span Title - 2</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </span>
+                <span>
+                    <h4>Span Title - 3</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </span>
+            </article>
         </section>
-        <article>
-            <h2>Título do Article - 1 (Não precisa relacionar-se com o conteúdo principal)</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Itaque, debitis! Hic dolore maiores laboriosam quod
-                soluta officiis! Magni totam numquam modi maxime, nisi
-                possimus, facilis ex, quisquam quae veritatis neque?
-                (Descrição da seção)
-            </p>
-        </article>
-        <article>
-            <h2>
-                Título do Article - 2 (Com imagem e link) |
-                <time datetime="2024-10-16">Dia, Mês</time>
-            </h2>
-            <figure>
-                <img src="" alt="Imagem">
-                <figcaption>Imagem 1 (Legenda visível da foto)</figcaption>
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Itaque, debitis! Hic <em>dolore maiores</em> laboriosam quod
-                soluta officiis! <br /><br /><q>Magni totam numquam modi maxime, nisi
-                    possimus, facilis ex, <strong>quisquam quae</strong>
-                    veritatis neque?</q>
-                <br /><br /><cite>Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Libero impedit minima autem ex consequuntur
-                    laudantium, expedita eligendi delectus ut! Blanditiis
-                    expedita esse qui tempora laboriosam nihil, fugiat
-                    adipisci quis libero.</cite>
-            </p>
-            <a href="index.html"> Visite o site</a>
-        </article>
         <aside>
-            <h1>Veja também:</h1>
-            <nav>
-                <ul>
-                    <li>Link 1</li>
-                    <li><a href="index.html"> Link 2</a></li>
-                    <li>Link 3</li>
-                    <li>Link 4</li>
-                </ul>
-            </nav>
+            <section>
+                <h1>Lista de Links 1:</h1>
+                <nav>
+                    <ul>
+                        <li>Link 1</li>
+                        <li><a href="index.html"> Link 2</a></li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h1>Lista de Links 2:</h1>
+                <nav>
+                    <ol>
+                        <li>Link 5</li>
+                        <li><a href="index.html"> Link 6</a></li>
+                        <li>Link 7</li>
+                        <li>Link 8</li>
+                    </ol>
+                </nav>
+            </section>
         </aside>
     </main>
+    <script>
+        const toggleButton = document.getElementById('toggle-css');
+        const link = document.querySelector('link[rel="stylesheet"]');
+
+        toggleButton.addEventListener('click', function () {
+            if (link.disabled) {
+                link.disabled = false;
+                toggleButton.textContent = 'Desativar CSS';
+            } else {
+                link.disabled = true;
+                toggleButton.textContent = 'Ativar CSS';
+            }
+        });
+    </script>
     <footer>
         <p>&#x1f16d; &copy; Todos os direitos reservados</p>
     </footer>
