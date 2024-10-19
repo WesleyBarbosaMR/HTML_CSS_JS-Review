@@ -1,41 +1,3 @@
-/* 
- - padding
- - margin
- - height
- - width
- - border
- - background
- - font
- - color
- - grid
- - grid-template-area
- - grid-template-row
- - grid-template-column
- - flex
- - gab
- - justify/align
- - content/items/self
- - start
-
- .class
- tag.class
- tag.class1.class2 -> o elemento precisa conter as duas classes ao mesmo tempo.
- .class1{
-    .class2{}
- }
-    .class1 .class2 {}
-    .class1 *:status {}
-    .class:hover {}
-    .class *:hover {}
-    .class &:hover {}
-    .class > 
-
- #id
- #id\variações
- #variações\id
-
-*/
-
 /* Reset básico */
 * {
     margin: 0;
@@ -52,12 +14,26 @@ header {
     padding: 20px;
 }
 
+section header {
+    border-radius: 15px 15px 0 0;
+}
+
+article section header {
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+}
+
 #toggle-css {
     margin: 10px;
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
     /* Muda o cursor ao passar o mouse */
+}
+
+#toggle-css:active {
+    background-color: #ccc;
+    border-radius: 5px;
 }
 
 header h1 {
@@ -95,7 +71,7 @@ main {
     font-family: Arial, sans-serif;
 }
 
-section {
+article {
     margin-bottom: 40px;
     /* Espaçamento entre seções */
 }
@@ -107,7 +83,14 @@ h2 {
     /* Espaçamento abaixo dos subtítulos */
 }
 
-article {
+article section:has(cite) {
+    margin: 10px 0;
+    border-left: 10px solid#333;
+    background-color: #ccc;
+}
+
+section,
+div {
     background-color: #f9f9f9;
     /* Fundo claro */
     border: 1px solid #ccc;
@@ -120,7 +103,22 @@ article {
     /* Espaçamento entre artigos */
 }
 
-article header h2 {
+span {
+    background-color: #f9f9f9;
+    /* Fundo claro */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    padding: 5px;
+    /* Preenchimento interno */
+    margin-bottom: 10px;
+    /* Espaçamento entre artigos */
+    display: inline-block;
+}
+
+section header h2,
+h3 {
     color: white;
     text-align: left;
     /* Verde para títulos de artigos */
@@ -143,9 +141,12 @@ article header h2 {
 }
 
 /* Estilo para vídeos e áudio */
+figure,
 video,
-audio {
-    width: 100%;
+audio,
+iframe {
+    width: 90%;
+    display: flexbox;
     /* Largura total */
     margin: 10px 0;
     /* Espaçamento acima e abaixo */

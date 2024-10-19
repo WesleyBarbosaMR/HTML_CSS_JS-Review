@@ -12,7 +12,6 @@
 <body>
     <header>
         <h1>Cabeçalho - Título da Página</h1>
-        <button id="toggle-css">Desativar CSS</button>
         <nav>
             <ul>
                 <li><a href="index.html"> Home</a></li>
@@ -21,32 +20,50 @@
                 <li><a href="forms.html"> Formulários</a></li>
             </ul>
         </nav>
+        <button type="button" id="toggle-css">Desativar CSS</button>
     </header>
     <main>
         <section>
-            <h1>Experimentos de HTML - 1</h1>
             <article>
                 <header>
-                    <h2>Título da Seção - 1 (Parte do Assunto Principal)</h2>
+                    <h2>Título do Article - 1(H2)</h2>
                     <h3>Subtítulo da Seção - 1</h3>
                 </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque, debitis! Hic dolore maiores laboriosam quod
-                    soluta officiis! Magni totam numquam modi maxime, nisi
-                    possimus, facilis ex, quisquam quae veritatis neque?
-                    (Descrição da seção)
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>Título do Article - 1 (Não precisa relacionar-se com o conteúdo principal)</h2>
-                </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque, debitis! Hic dolore maiores laboriosam quod
-                    soluta officiis! Magni totam numquam modi maxime, nisi
-                    possimus, facilis ex, quisquam quae veritatis neque?
-                    (Descrição da seção)
-                </p>
+                <section>
+                    <article>
+                        <header>
+                            <h2>Título da Subseção - 1(H2)</h2>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque, debitis! Hic dolore maiores laboriosam quod
+                            soluta officiis! Magni totam numquam modi maxime, nisi
+                            possimus, facilis ex, quisquam quae veritatis neque?
+                            (Descrição da seção)
+                        </p>
+                    </article>
+                    <article>
+                        <header>
+                            <h2>Título da Subseção - 1(H2)</h2>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque, debitis! Hic dolore maiores laboriosam quod
+                            soluta officiis! Magni totam numquam modi maxime, nisi
+                            possimus, facilis ex, quisquam quae veritatis neque?
+                            (Descrição da seção)
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <header>
+                        <h2>Título do Subseção - 2</h2>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque, debitis! Hic dolore maiores laboriosam quod
+                        soluta officiis! Magni totam numquam modi maxime, nisi
+                        possimus, facilis ex, quisquam quae veritatis neque?
+                        (Descrição da seção)
+                    </p>
+                </section>
             </article>
             <article>
                 <header>
@@ -56,51 +73,59 @@
                     </h2>
                 </header>
                 <figure>
-                    <img src="" alt="Imagem">
+                    <img src="../assets/imgs/jedi-temple.png" alt="Imagem">
                     <figcaption>Imagem 1 (Legenda visível da foto)</figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Itaque, debitis! Hic <em>dolore maiores</em> laboriosam quod
-                    soluta officiis! <br /><br /><q>Magni totam numquam modi maxime, nisi
-                        possimus, facilis ex, <strong>quisquam quae</strong>
+                    soluta officiis! <br /><br /><q>Magni totam numquam <i>maxime, nisi
+                            possimus, facilis ex,</i> <strong>quisquam quae</strong>
                         veritatis neque?</q>
-                    <br /><br /><cite>Lorem ipsum dolor sit, amet consectetur adipisicing
+                </p>
+                <section>
+                    <cite>Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Libero impedit minima autem ex consequuntur
                         laudantium, expedita eligendi delectus ut! Blanditiis
                         expedita esse qui tempora laboriosam nihil, fugiat
                         adipisci quis libero.</cite>
-                </p>
+                </section>
                 <a href="index.html"> Visite o site</a>
             </article>
             <article>
                 <header>
                     <h2>Título do Article - 3 (Com vídeo)</h2>
                 </header>
-                <video src="../assets/videos/The_Ballad_of_the_Witches.mp4" controls></video>
-                <label>Asset Video</label>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque, debitis! Hic dolore maiores laboriosam quod
-                    soluta officiis!
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-V1YLGz5NLA?si=WkYYo_jTNI5X1j4C"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <label>Linked Video</label>
-                <audio src="../assets/audio/The_Ballad_of_the_Witches.mp3" controls>Ouça
-                    aqui!</audio>
-                <label>Asset Áudio</label>
+                <section>
+                    <h4>Asset Video</h4>
+                    <video src="../assets/videos/The_Ballad_of_the_Witches.mp4" controls></video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque, debitis! Hic dolore maiores laboriosam quod
+                        soluta officiis!
+                    </p>
+                </section>
+                <section>
+                    <h4>Linked Video</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-V1YLGz5NLA?si=WkYYo_jTNI5X1j4C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h4>Asset Áudio</h4>
+                    <audio src="../assets/audio/The_Ballad_of_the_Witches.mp3" controls>Ouça
+                        aqui!</audio>
+                </section>
             </article>
             <article>
                 <h1>Ilustrando a diferença entre Divs e Spans</h1>
                 <div>
-                    <h3>Div Title 1</h3>
+                    <h4>Div Title 1</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
                         quisquam. Deserunt voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus
                         rem, a aspernatur omnis sunt dignissimos officiis!</p>
                 </div>
                 <div>
-                    <h3>Div Title 2</h3>
+                    <h4>Div Title 2</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
                         quisquam. Deserunt
                         voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus rem, a aspernatur
@@ -108,7 +133,7 @@
                         dignissimos officiis!</p>
                 </div>
                 <div>
-                    <h3>Div Title 3</h3>
+                    <h4>Div Title 3</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, rem. Vitae, praesentium
                         quisquam. Deserunt
                         voluptatem assumenda debitis veniam, corrupti iure possimus ullam. Accusamus rem, a aspernatur
@@ -117,15 +142,15 @@
                 </div>
                 <span>
                     <h4>Span Title - 1</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem, ipsum dolor sit</p>
                 </span>
                 <span>
                     <h4>Span Title - 2</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem, ipsum dolor sit</p>
                 </span>
                 <span>
                     <h4>Span Title - 3</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem, ipsum dolor sit</p>
                 </span>
             </article>
         </section>
